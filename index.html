@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li> <a href="#Home">Home</a></li>
+            <li> <a href="#News">News</a></li>
+            <li> <a href="#Contact">Contact</a></li>
+            <li> <a href="#About">About</a></li>
+            <li class="topnav-right"> <a href="#Sign Up">Sign Up</a></li>
+            <li class="topnav-right"> <a href="#Sign In">Sign In</a></li>
+            <li class="DropDownIcon"> <a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                // change topnav to topnav.responsive
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+</body>
+</html>
